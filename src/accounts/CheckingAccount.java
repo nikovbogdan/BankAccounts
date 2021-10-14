@@ -21,7 +21,11 @@ public class CheckingAccount extends Account {
         }
         balance -= cost + fee;
         System.out.printf("Purchase completed!\n\tPurchase cost: %.2f\n\tBalance: %.2f\n\tFee: %.2f\n", cost, balance,fee);
-        rewardPoints += cost;
+        rewardPoints += calculateRewardPoints(cost);
         return balance;
+    }
+
+    public int calculateRewardPoints(double cost) {
+        return (int)(cost * 10);
     }
 }
