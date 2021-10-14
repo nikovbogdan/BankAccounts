@@ -1,4 +1,6 @@
-package accounts;
+package accounts.savings;
+
+import accounts.Account;
 
 public class SavingsAccount extends Account {
 

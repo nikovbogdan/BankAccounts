@@ -1,4 +1,6 @@
-package accounts;
+package accounts.checking;
+
+import accounts.Account;
 
 public class CheckingAccount extends Account {
 

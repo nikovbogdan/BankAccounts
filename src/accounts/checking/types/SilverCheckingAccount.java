@@ -1,4 +1,6 @@
-package accounts;
+package accounts.checking.types;
+
+import accounts.checking.CheckingAccount;
 
 public class SilverCheckingAccount extends CheckingAccount {
     public SilverCheckingAccount(double balance, double interestRate, int rewardPoints) {

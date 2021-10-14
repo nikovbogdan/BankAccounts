@@ -1,4 +1,6 @@
-package accounts;
+package accounts.checking.types;
+
+import accounts.checking.CheckingAccount;
 
 public class GoldCheckingAccount extends CheckingAccount {
     public GoldCheckingAccount(double balance, double interestRate, int rewardPoints) {

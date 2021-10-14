@@ -1,6 +1,6 @@
-import accounts.DiamondCheckingAccount;
-import accounts.GoldCheckingAccount;
-import accounts.SilverCheckingAccount;
+import accounts.checking.types.DiamondCheckingAccount;
+import accounts.checking.types.GoldCheckingAccount;
+import accounts.checking.types.SilverCheckingAccount;
 
 public class Main {
     public static void main(String[] args) {
