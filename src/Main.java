@@ -10,6 +10,7 @@ public class Main {
         sa.withdraw(10);
 
         ca.purchase(12);
+        sa.deposit(15);
 
     }
 }

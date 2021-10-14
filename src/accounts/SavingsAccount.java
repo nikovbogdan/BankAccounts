@@ -12,4 +12,10 @@ public class SavingsAccount extends Account {
         fee = amount * 0.025;
         return super.withdraw(amount);
     }
+
+    @Override
+    public void deposit(double amount) {
+        amount += amount*0.001;
+        super.deposit(amount);
+    }
 }
