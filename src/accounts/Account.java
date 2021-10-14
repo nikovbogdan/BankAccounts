@@ -11,29 +11,11 @@ public class Account {
         this.interestRate = interestRate;
     }
 
-    public double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
-    public double getInterestRate() {
-        return interestRate;
-    }
-
-    public void setInterestRate(double interestRate) {
-        this.interestRate = interestRate;
-    }
-
     public void status() {
         System.out.printf("Your balance is: %.2f\n",balance);
+        System.out.println();
     }
 
-    public double getFee() {
-        return fee;
-    }
 
     public double withdraw(double amount) {
         if ((amount + fee) > balance) {

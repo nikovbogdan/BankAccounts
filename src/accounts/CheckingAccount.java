@@ -14,7 +14,7 @@ public class CheckingAccount extends Account {
     }
 
     public double purchase(double cost) {
-        fee = cost * 0.01;
+        fee = cost * 0.001;
         if ((cost + fee) > balance) {
             System.out.printf("Purchase failed!\n\tPurchase cost: %.2f\n\tBalance: %.2f\n\tFee: %.2f\n", cost, balance,fee);
             return balance;
