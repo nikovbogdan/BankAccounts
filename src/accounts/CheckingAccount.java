@@ -14,12 +14,13 @@ public class CheckingAccount extends Account {
     }
 
     public double purchase(double cost) {
-        if (cost > balance) {
-            System.out.printf("Purchase failed!\n\t Purchase cost: %.2f\n\tBalance: %.2f\n", cost, balance);
+        fee = cost * 0.01;
+        if ((cost + fee) > balance) {
+            System.out.printf("Purchase failed!\n\tPurchase cost: %.2f\n\tBalance: %.2f\n\tFee: %.2f\n", cost, balance,fee);
             return balance;
         }
-        balance -= cost;
-        System.out.printf("Purchase completed!\n\t Purchase cost: %.2f\n\tBalance: %.2f\n", cost, balance);
+        balance -= cost + fee;
+        System.out.printf("Purchase completed!\n\tPurchase cost: %.2f\n\tBalance: %.2f\n\tFee: %.2f\n", cost, balance,fee);
         rewardPoints += cost;
         return balance;
     }
