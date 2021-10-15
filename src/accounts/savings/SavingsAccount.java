@@ -20,4 +20,9 @@ public class SavingsAccount extends Account {
         amount += amount * 0.001;
         super.deposit(amount);
     }
+
+    @Override
+    public void status() {
+        System.out.printf("Savings Account\n\tBalance: %.2f\n\tInterests Rate : %.2f",balance,interestRate);
+    }
 }
