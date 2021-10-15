@@ -1,25 +1,11 @@
-import accounts.checking.types.DiamondCheckingAccount;
-import accounts.checking.types.GoldCheckingAccount;
-import accounts.checking.types.SilverCheckingAccount;
+import accounts.checking.CheckingAccount;
 
 public class Main {
     public static void main(String[] args) {
 
-        SilverCheckingAccount silver = new SilverCheckingAccount(5000,0.025,0);
-        GoldCheckingAccount gold = new GoldCheckingAccount(5000,0.025,0);
-        DiamondCheckingAccount diamond = new DiamondCheckingAccount(5000,0.025,0);
+        CheckingAccount ca = new CheckingAccount(1000,1,1);
 
-        System.out.println(silver.getRewardPoints());
-        System.out.println(gold.getRewardPoints());
-        System.out.println(diamond.getRewardPoints());
-
-        silver.purchase(50);
-        gold.purchase(50);
-        diamond.purchase(50);
-
-        System.out.println(silver.getRewardPoints());
-        System.out.println(gold.getRewardPoints());
-        System.out.println(diamond.getRewardPoints());
+        ca.status();
 
 
     }

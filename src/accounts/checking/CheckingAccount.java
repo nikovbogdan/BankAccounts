@@ -15,6 +15,12 @@ public class CheckingAccount extends Account {
         return rewardPoints;
     }
 
+    @Override
+    public void status() {
+        System.out.print("Checking Account");
+        System.out.printf("\n\tBalance: %.2f\n\tReward Points: %d",balance,rewardPoints);
+    }
+
     public double purchase(double cost) {
         fee = cost * 0.001;
         if ((cost + fee) > balance) {
