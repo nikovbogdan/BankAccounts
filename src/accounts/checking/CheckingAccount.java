@@ -18,7 +18,7 @@ public class CheckingAccount extends Account {
     @Override
     public void status() {
         System.out.print("Checking Account");
-        System.out.printf("\n\tBalance: %.2f\n\tReward Points: %d",balance,rewardPoints);
+        System.out.printf("\n\tBalance: %.2f\n\tReward Points: %d\n",balance,rewardPoints);
     }
 
     public double purchase(double cost) {

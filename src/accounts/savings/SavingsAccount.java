@@ -23,6 +23,6 @@ public class SavingsAccount extends Account {
 
     @Override
     public void status() {
-        System.out.printf("Savings Account\n\tBalance: %.2f\n\tInterests Rate : %.2f",balance,interestRate);
+        System.out.printf("Savings Account\n\tBalance: %.2f\n\tInterests Rate : %.3f",balance,interestRate);
     }
 }
