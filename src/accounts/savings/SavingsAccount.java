@@ -4,7 +4,6 @@ import accounts.Account;
 
 public class SavingsAccount extends Account {
 
-
     public SavingsAccount(double balance, double interestRate) {
         super(balance, interestRate);
     }
@@ -23,6 +22,6 @@ public class SavingsAccount extends Account {
 
     @Override
     public void status() {
-        System.out.printf("Savings Account\n\tBalance: %.2f\n\tInterests Rate : %.3f",balance,interestRate);
+        System.out.printf("Savings Account\n\tBalance: %.2f\n\tInterests Rate : %.3f\n",balance,interestRate);
     }
 }

@@ -10,6 +10,10 @@ public class Main {
 
         ca.status();
         sa.status();
+        System.out.println();
+        System.out.println(ca.getRewardPoints());
+        System.out.println();
+        ca.status();
 
 
     }
