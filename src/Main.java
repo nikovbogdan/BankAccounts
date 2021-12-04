@@ -9,10 +9,5 @@ public class Main {
 
 
         ca.status();
-        System.out.println("-----");
-        ca.purchase(100);
-        System.out.println("-----");
-        ca.status();
-
     }
 }
